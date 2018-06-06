@@ -1,0 +1,111 @@
+@import "./common.scss";
+
+.carelist {
+    li {
+        padding: 0 pr(10);
+
+        .user {
+            width: 100%;
+            display: flex;
+            padding: pr(15) 0;
+
+            justify-content: space-between;
+            align-items: center;
+            // border: 1px solid #000;
+
+            .left {
+                display: flex;
+                align-items: center;
+                .icon {
+                    width: pr(40);
+                }
+
+                .username {
+                    font-size: pr(15);
+                    color: #333;
+                    margin-left: pr(15);
+                }
+            }
+
+            .right {
+                font-size: pr(12);
+                color: #999;
+            }
+
+        }
+
+        .title {
+            width: 100%;
+            text-align: center;
+            margin-bottom: pr(15);
+            // border: 1px solid #000;
+            font-size: pr(18);
+            color: #999;
+        }
+
+        .images {
+            width: 100%;
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            .juchi {
+                width: 100%;
+                display: flex;
+                position: absolute;
+                bottom: pr(5);
+                left: 0;
+
+                .box {
+                    width: 0;
+                    height: 0;
+                    border-top: 0px solid #000;
+                    border-left: (10-20/32)/50+rem solid transparent;
+                    border-right: (10-20/32)/50+rem solid transparent;
+                    border-bottom: pr(10) solid #fff;
+                }
+            }
+        }
+
+        .content {
+            padding: 0 pr(15);
+            color: #333;
+        }
+
+        .info {
+            padding: pr(15) pr(15);
+            border-bottom: 1px solid #ccc;
+
+            p {
+                font-size: pr(15);
+                color: #999;
+
+                &:nth-child(1) img {
+                    width: pr(15);
+                    margin-right: pr(5);
+                }
+
+                &:nth-child(2) span:nth-child(1){
+                    color: #999;
+                    font-weight: bold;
+                    font-size: 0.7rem;
+                }
+            }
+
+        }
+
+        .control {
+            padding: pr(15) 0;
+            img{
+                width: pr(25);
+
+                &:nth-child(2) {
+                    margin: 0 pr(15);
+                }
+            }
+
+        }
+    }
+}

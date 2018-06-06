@@ -1,0 +1,47 @@
+@import "./common.scss";
+
+.list {
+    li {
+        display: flex;
+        padding: 0 pr(15);
+        justify-content: space-between;
+        height: pr(60);
+        border-bottom: pr(1) solid #ccc;
+        align-items: center;
+
+        .left {
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            img {
+                height: pr(40);
+            }
+
+            .info {
+                margin-left: pr(15);
+
+                .title {
+                    color: #666;
+                    font-size: pr(16);
+                }
+
+                .subtitle {
+                    color: #999;
+                    font-size: pr(14);
+                }
+            }
+        }
+
+        .right {
+            font-size: pr(15);
+            width: pr(60);
+            height:pr(30);
+            border: pr(1) solid #c1d967;
+            color: #c1d967;
+            border-radius: pr(15);
+            text-align: center;
+            line-height: pr(30);
+        }
+    } 
+}

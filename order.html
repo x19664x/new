@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        document.querySelector("html").style.fontSize = window.screen.width / 10 + "px";
+    </script>
+
+    <link rel="stylesheet" href="./css/list.css">
+</head>
+<body>
+    <ul class="list">
+        <li>
+            <div class="left">
+                <img src="./img/02-head-icons/01.jpg" alt="">
+                <div class="info">
+                    <p class="title">一句话影评</p>
+                    <p class="subtitle">12306人订阅</p>
+                </div>
+            </div>
+            <a href="" class="right">订阅</a>
+        </li>
+        <li>
+            <div class="left">
+                <img src="./img/02-head-icons/01.jpg" alt="">
+                <div class="info">
+                    <p class="title">一句话影评</p>
+                    <p class="subtitle">12306人订阅</p>
+                </div>
+            </div>
+            <a href="" class="right">订阅</a>
+        </li>
+        <li>
+            <div class="left">
+                <img src="./img/02-head-icons/01.jpg" alt="">
+                <div class="info">
+                    <p class="title">一句话影评</p>
+                    <p class="subtitle">12306人订阅</p>
+                </div>
+            </div>
+            <a href="" class="right">订阅</a>
+        </li>
+        <li>
+            <div class="left">
+                <img src="./img/02-head-icons/01.jpg" alt="">
+                <div class="info">
+                    <p class="title">一句话影评</p>
+                    <p class="subtitle">12306人订阅</p>
+                </div>
+            </div>
+            <a href="" class="right">订阅</a>
+        </li>
+        <li>
+            <div class="left">
+                <img src="./img/02-head-icons/01.jpg" alt="">
+                <div class="info">
+                    <p class="title">一句话影评</p>
+                    <p class="subtitle">12306人订阅</p>
+                </div>
+            </div>
+            <a href="" class="right">订阅</a>
+        </li>
+        <li>
+            <div class="left">
+                <img src="./img/02-head-icons/01.jpg" alt="">
+                <div class="info">
+                    <p class="title">一句话影评</p>
+                    <p class="subtitle">12306人订阅</p>
+                </div>
+            </div>
+            <a href="" class="right">订阅</a>
+        </li>
+        <li>
+            <div class="left">
+                <img src="./img/02-head-icons/01.jpg" alt="">
+                <div class="info">
+                    <p class="title">一句话影评</p>
+                    <p class="subtitle">12306人订阅</p>
+                </div>
+            </div>
+            <a href="" class="right">订阅</a>
+        </li>
+        <li>
+            <div class="left">
+                <img src="./img/02-head-icons/01.jpg" alt="">
+                <div class="info">
+                    <p class="title">一句话影评</p>
+                    <p class="subtitle">12306人订阅</p>
+                </div>
+            </div>
+            <a href="" class="right">订阅</a>
+        </li>
+        <li>
+            <div class="left">
+                <img src="./img/02-head-icons/01.jpg" alt="">
+                <div class="info">
+                    <p class="title">一句话影评</p>
+                    <p class="subtitle">12306人订阅</p>
+                </div>
+            </div>
+            <a href="" class="right">订阅</a>
+        </li>
+        <li>
+            <div class="left">
+                <img src="./img/02-head-icons/01.jpg" alt="">
+                <div class="info">
+                    <p class="title">一句话影评</p>
+                    <p class="subtitle">12306人订阅</p>
+                </div>
+            </div>
+            <a href="" class="right">订阅</a>
+        </li>
+    </ul>
+</body>
+</html>
+
+<!-- 
+    1. 我们需要把设计稿里面的像素值， 转成 rem 值。
+        1. 知道这个像素素是针对于多大屏幕的， 就比如说， 像素稿是640宽度，并且是2倍图， 那么对应的屏幕宽度就是 320px。 
+        2. 计算rem值。 假如某个元素的字体大小是 16px。 那么它所对应的rem值是 320px/10 = 1rem = 32px。 16px/32px就得到这个字体的rem值
+
+    2. 就可以在css代码中， 直接使用这个rem值了
+
+    3. 但是默认情况下，手机的浏览器的 1rem的值，并不是屏幕宽度的十分之一，而是 16px。 所以，我们需要做一件事， 就是把1rem的的值，设为屏幕宽度的10分之一。 
+
+    ```
+    document.querySelector("html").style.fontSize = window.screen.width / 10 + "px";
+    ```
+
+    4. 我们可以一开始时，选使用px来用布局。布局完成之后，使用插件
+        1. Px to rem（配置设置稿的1rem的值）：在设置的最后边的最后面，加下面这句话： "px-to-rem.px-per-rem": 32
+        2. 选中需要转rem的css
+        3. 执行 alt+z（如果快捷键被占用，就执行 ctl+ship+p, 手动 输入 px to rem, 占击该命令即可）
+ -->

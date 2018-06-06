@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="./js/common.js"></script>
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./lib/swiper/js/swiper.min.js"></script>
+
+    <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/list.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <!-- 关注 -->
+                        <div class="swiper-container2 container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"></div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- 订阅 -->
+                        <!-- 先实现内部滚动 -->
+                        <div class="swiper-container1 container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"></div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 小点点 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="bottom"></div>
+    </div>
+
+    <footer>
+        <a class="active" href="./index.html"><img src="./img/01-app-icons/tab_01.png" alt=""><span>首页</span></a>
+        <a href="./find.html"><img src="./img/01-app-icons/tab_02.png" alt=""><span>发现</span></a>
+
+        <a href=""><img src="./img/01-app-icons/tab_camera.png" alt=""></a>
+
+        <a href="./news.html"><img src="./img/01-app-icons/tab_03.png" alt=""><span>消息</span></a>
+        <a href="./mine.html"><img src="./img/01-app-icons/tab_04.png" alt=""><span>我的</span></a>
+    </footer>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+            el: '.swiper-pagination',
+            },
+        });
+
+        $(function() {
+            $(".swiper-container1 .swiper-slide").load("./order.html", function() {
+                var swiper1 = new Swiper('.swiper-container1', {
+                    direction: 'vertical',
+                    slidesPerView: 'auto',
+                    freeMode: true,
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                    },
+                    mousewheel: true,
+                });
+            });
+
+            $(".swiper-container2 .swiper-slide").load("./care.html", function() {
+                var swiper2 = new Swiper('.swiper-container2', {
+                    direction: 'vertical',
+                    slidesPerView: 'auto',
+                    freeMode: true,
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                    },
+                    mousewheel: true,
+                });
+            });
+        })
+
+    </script>
+</body>
+</html>

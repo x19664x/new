@@ -1,0 +1,38 @@
+html, body {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+}
+
+.images {
+  width: 100%;
+  padding: 0 0.3125rem;
+}
+.images .img {
+  width: 100%;
+  height: 200px;
+  background-color: skyblue;
+}
+
+.juchi {
+  display: flex;
+  width: 100%;
+}
+.juchi .box {
+  width: 0;
+  height: 0;
+  border-left: 0.234375rem solid transparent;
+  border-right: 0.234375rem solid transparent;
+  border-top: 0px solid transparent;
+  border-bottom: 0.9375rem solid red;
+}
+
+/*# sourceMappingURL=juchi.css.map */
